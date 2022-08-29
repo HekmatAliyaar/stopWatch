@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+
+
+
+#container-stop{
+    display: grid;
+    width: 270px;
+    height: 270px;
+    border-radius:100%;
+    background-color: rgba(8, 73, 252, 0.986);
+    color: white;
+    text-align: center;
+    grid-column-gap: 12px;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas:
+     "header header header"
+    "timer timer timer"
+    "start stop reset";
+    margin: auto;
+    margin-top: 100px;
+    z-index:0;
+}
+h1{
+    margin:20px 0 0 0;
+    grid-area: header;
+
+}
+button{
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+    border:none;
+    border-radius:5px;
+}
+button.disabled{
+    cursor: default;
+}
+#start-button{
+    grid-area: stop;
+    background-color:green;
+}
+#reset-button{
+    grid-area:reset;
+    background-color: rgb(238, 255, 0);
+}
+#stop-button{
+    background-color: red;
+}
+
+#timer{
+    margin:12px;
+    font-size: 24px;
+    font-family: bold;
+    font-family: monospace;
+    grid-area: timer;
+}
